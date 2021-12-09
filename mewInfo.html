@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Mew</title>
+        
+        <style>
+            
+body{
+    background-image: url("pokeball3.png");
+    background-position: center;
+    background: rgba(0, 0, 0, 1);
+    /*background-attachment: fixed;*/
+    /*background-repeat: no-repeat;*/
+    
+}
+
+/*div{
+    outline: 1px dotted white;
+}*/
+
+
+
+
+#main{
+    /*background-color: grey;*/
+    display: flex;
+    /*flex-direction: row;*/
+    /*flex-wrap: nowrap;*/
+    justify-content: space-around;
+    width: 100%;
+}
+
+    #pokemon{
+        /*background-color: magenta;*/
+        width: 30%;
+    }
+
+            #a,#b,#c{
+                /*background-color: tomato;*/
+                width: 100%;
+                /*margin-left: auto;*/
+                /*margin-right: auto;*/
+            }
+
+            #a,#b,#c > img{
+                /*display: block;*/
+                margin: auto;
+                width: 80%;
+            }
+
+    #infos{
+        display: flex;
+        flex-direction: column;
+        /*background-color: lightseagreen;*/
+        width: 65%;
+    }
+
+            #titre{
+                text-align: center;
+                /*background-color: yellow;*/
+                height: 30%;
+            }
+
+            #infos2{
+                /*background-color: springgreen;*/
+                /*position: absolute;*/
+                height: 70%;
+            }
+
+
+
+            
+#second{
+    display: flex;
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+    /*background-color: orangered;*/
+    text-align: center;
+    width: 100%
+}
+
+#second > div:hover{
+    background-color: gray;
+}
+
+    #x{
+        /*background-color: peru;*/
+        margin-left: auto;
+        margin-right: auto;
+        width: 33%;
+    }
+
+    #y{
+        /*background-color: peru;*/
+        margin-left: auto;
+        margin-right: auto;
+        width: 33%;        
+    }
+
+    #z{
+        /*background-color: peru;*/
+        margin-left: auto;
+        margin-right: auto;
+        width: 33%;
+    }
+        #x > img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;            
+        }
+
+        #y > img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 65%;
+        }
+
+        #z > img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+
+
+    /*#second > div > img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }*/
+
+
+
+    
+    img{
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+
+
+
+
+figcaption{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.25em;
+    color: seashell;
+}
+
+h1, h2{
+    text-align: center;
+    color: seashell;
+}
+
+ul{
+    color: seashell;
+}
+
+li{
+    font-size: 1.5em;
+    color: seashell;
+}
+
+.hidden{
+    display: none;
+}
+
+.xxx{
+    display: none;
+}
+@media only screen and (max-width: 700px){
+
+    #main{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+        #pokemon{
+            width: 100%;
+        }
+
+            #a,#b,#c{
+                /*background-color: tomato;*/
+                width: 100%;
+                /*margin-left: auto;*/
+                /*margin-right: auto;*/
+            }
+
+            #a,#b,#c > img{
+                /*display: block;*/
+                margin: auto;
+                width: 50%;
+            }
+
+
+        #infos{
+            width: 100%;
+        }
+
+
+    #second{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%
+    }
+
+        #x,#y,#z{
+            width: 100%;
+        }
+
+            #x > img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 35%;            
+            }
+
+            #y > img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 45%;
+            }
+
+            #z > img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 55%;
+            }
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+<header></header>
+
+<div id="main">
+
+    <div id="pokemon">
+
+        <div id="a">
+            <img src="mew.png" alt="Mew">
+            <figcaption>Mew</figcaption>
+        </div>
+
+        <div id="b" class="xxx">
+            <img src="User_Avatar_2.png" alt="">
+            <figcaption>Steelix</figcaption>
+        </div>
+
+        <div id="c" class="xxx">
+            <img src="User_Avatar_2.png" alt="">
+            <figcaption>xxx</figcaption>
+        </div>
+
+    </div>
+
+
+    <div id="infos">
+
+        <div id="titre">
+            <h1>Infos Pokémon</h1>
+        </div>
+
+        <div id="infos2">
+            <ul>   
+                <li>Type: psy
+                <li>Taille: 0.4m
+                <li>Poids: 4kg
+                <li>Description: "Nombre de scientifiques voient en lui l'ancêtre des Pokémon car il maîtrise toutes leurs capacités."
+            </ul>
+                
+            <ul class="xxx">  
+                <li>Description: en vrai de vrai
+            </ul>
+            
+            <ul class="xxx">                
+                <li>Description: ce pokémon m'inspire pas grand chose... Mais je respecte il est puissant.
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<h2>Évolutions</h2>
+    <div id="second">
+
+        <div id="x" onclick="evolution(this)">
+            <img src="mew.png" alt="Mew">
+            <figcaption>Mew</figcaption>
+        </div>
+
+        <div id="y" class="xxx" onclick="evolution(this)">    
+            <img src="User_Avatar_2.png" alt="">
+            <figcation>xxx</figcaption> 
+        </div>
+
+        <div id="z" class="xxx" onclick="evolution(this)">    
+            <img src="User_Avatar_2.png" alt="Ectoplasma">
+            <figcaption>xxx</figcaption>   
+        </div>
+
+</div>
+<footer></footer>
+
+
+
+<script>
+/*Lorsqu'on clique sur le nom d'un pokémon, cela affiche les infos de ce dernier*/
+
+function evolution(x){
+    var a = x.id
+    //console.log(a)
+    //console.log(typeof a)
+
+    if(a=="x"){
+        var b = document.getElementById("a").classList.remove("hidden");
+        var c = document.getElementById("b").classList.add("hidden");
+        var b = document.getElementById("c").classList.add("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.remove("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.add("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.add("hidden");
+
+        document.title = "Palkia";
+    }
+
+    else if(a=="y"){
+        var b = document.getElementById("a").classList.add("hidden");
+        var c = document.getElementById("b").classList.remove("hidden");
+        var b = document.getElementById("c").classList.add("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.add("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.remove("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.add("hidden");
+
+        document.title = "Red";
+    }
+
+    else if(a=="z"){
+        var b = document.getElementById("a").classList.add("hidden");
+        var c = document.getElementById("b").classList.add("hidden");
+        var b = document.getElementById("c").classList.remove("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.add("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.add("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.remove("hidden");
+
+        document.title = "xxx"; //alors là si quelqu'un arrive à réussir cette condition vraiment bravo
+    }
+
+}
+
+</script>
+</body>
+</html>
