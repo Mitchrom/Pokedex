@@ -32,10 +32,10 @@ header{
     width: 100%;
     height: 100vh;
     /* Pour un image en ariere plan du site */
-    background: url(./bgpk.jpg) no-repeat 100% 50px;
-    /* Pour bien la centrer */
-    background-size: cover;
+    background: url(./bgpk.jpg) no-repeat center fixed; 
 
+    /* Pour uque l image prend tout la taille de l ariere plan */
+    background-size: cover;
 }
 
 nav{
@@ -61,8 +61,9 @@ nav ul li{
     display: inline-block;
     /* Pour qu elle soit un peut ecarter les unes des autres */
     padding: 20px;
+    transition: 0.2s;
 }
-li{
+nav li{
     /* Pour coller les listes entre elles */
 	position: relative;
 	margin-left: -40px;
@@ -104,32 +105,362 @@ span{
 }
 
 
+/********************************** Boddy **********************************/
+
+#pokemon div{
+    transition: 0.3s;
+    margin: 15px;
+    box-shadow: 0px 0px 5px 0px black;
+    border-radius: 10px;
+    background: white;
+}
+
+section{
+    padding-top: 55px;
+    background: rgb(250, 247, 224);
+}
+#pokemon{
+    display: flex;
+
+    /* Pour les aaligné */
+    flex-direction: row;
+
+    /* Ainsi lorsqu un element sorte du contenaire il faut la repositionner en bas *
+    * parfait pour le responssive */
+    flex-wrap: wrap;
+
+    /* Pour repartire les blocks de maniere egale */
+    justify-content: space-evenly;
+    background: rgb(250, 247, 224);
+
+}
+img{
+    width: 200px;
+    height: 250px;
+}
+
+figcaption{
+    text-align: center;
+    width: 200px;
+    position: relative;
+}
+
+#pokemon div:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
 /********************************** Footer **********************************/
 footer{
     /* Pour avoir des pointiller sur le bord du haut du footer */
     border-top: 1px dashed black;
+    background-size: cover;
+
+
+
+    padding: 0px;
     width: 100%;
-    height: 160px;
-    background: rgb(255, 214, 214);
+    height: 450px;
+    background: rgb(116, 112, 112); 
+
+    /* Pour les affichers les uns a coté des autres */
     display: flex;
+
+    /* Pour les aaligné */
     flex-direction: row;
+
+    /* Ainsi lorsqu un element sorte du contenaire il faut la repositionner en bas *
+    * parfait pour le responssive */
     flex-wrap: wrap;
+
+    /* Pour repartire les blocks de maniere egale */
     justify-content: space-evenly;
 }
 
 
+#gagoe ul{
+    /* Pour les affichers les uns a coté des autres */
+    display: flex;
+
+    /* Pour les aaligné */
+    flex-direction: row;
+
+    /* Ainsi lorsqu un element sorte du contenaire il faut la repositionner en bas *
+    * parfait pour le responssive */
+    flex-wrap: wrap;
+
+    /* Pour repartire les blocks de maniere egale */
+    justify-content: space-evenly;
+        
+    list-style: none;
+    font-size: 30px;
+    transition: 0.3s;
+
+}
+
+
+#mitchenko ul{
+    /* Pour les affichers les uns a coté des autres */
+    display: flex;
+
+    /* Pour les aaligné */
+    flex-direction: row;
+
+    /* Ainsi lorsqu un element sorte du contenaire il faut la repositionner en bas *
+    * parfait pour le responssive */
+    flex-wrap: wrap;
+
+    /* Pour repartire les blocks de maniere egale */
+    justify-content: space-evenly;
+    
+    list-style: none;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.mail{
+    text-decoration: none;
+    color: rgb(255, 68, 0);
+}
+
+.mail{
+    text-decoration: none;
+    color: rgb(255, 68, 0);
+}
 
 #gagoe{
-    width: 400px;
-    height: 150px;
-    background: brown;
+    padding: 15px;
+    font-size: 18px;
+    margin-top:25px;
+    width: 450px; 
+    height: 410px;
+    background: url(./teste4.png) no-repeat center;
+    background-size: cover;
+    color: black;
+    border-radius: 10px;
 }
 
+
 #mitchenko{
-    width: 400px; 
-    height: 150px;
-    background: rgb(143, 96, 96);
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 25px;
+    width: 450px; 
+    height: 410px;
+    background: url(./test3.png) no-repeat center;
+    background-size: cover;
+    color: black;
+    border-radius: 10px;
 }
+
+
+/********************************** Responssive Header **********************************/
+
+@media screen and (max-width: 430px){
+    nav ul li{
+        /* pour que le liste de la nav barre se met a la ligne,*
+        * a la suite l une de l autre */
+        display: inline-block;
+    }
+    nav ul{
+        margin-right: -10px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+    span{
+        color:orangered;
+        font-size: 30px;
+    }
+
+    .logo{
+        position: fixed;
+        margin: 10px 0px 0px 8px;
+        font-size: 20px;
+    }
+    nav{
+        height: 50px;
+
+    }
+}
+
+/********************************** Responsive Body **********************************/
+@media screen and (max-width: 920px){
+    #pokemon div{
+        transition: 0.3s;
+        margin: 5px;
+        box-shadow: 0px 0px 5px 0px black;
+        border-radius: 10px;
+        background: white;
+    }
+
+}
+
+@media screen and (max-width: 840px){
+
+    img{
+        width: 175px;
+        height: 200px;
+    }
+
+    figcaption{
+        text-align: center;
+        width: 175px;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width: 575px){
+
+    img{
+        width: 150px;
+        height: 185px;
+    }
+
+    figcaption{
+        text-align: center;
+        width: 150px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 581px){
+
+    img{
+        width: 140px;
+        height: 150px;
+    }
+
+    figcaption{
+        text-align: center;
+        width: 140px;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width: 449px){
+
+    img{
+        width: 120px;
+        height: 130px;
+    }
+
+    figcaption{
+        text-align: center;
+        width: 120px;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width: 390px){
+
+    img{
+        width: 100px;
+        height: 120px;
+    }
+
+    figcaption{
+        text-align: center;
+        width: 100px;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width: 330px){
+
+    img{
+        width: 90px;
+        height: 100px;
+    }
+
+    figcaption{
+        text-align: center;
+        width: 90px;
+        position: relative;
+    }
+
+}
+
+
+
+
+
+/********************************** Responsive Footer **********************************/
+@media screen and (max-width: 900px){
+    /* On va faire en sort que dées que la largeur sera en dessous de 1000px *
+    * le logo passera au dessus du formulaire */
+    footer{
+        height: 880px;
+    }
+    #gagoe{
+        margin-top: 45px;
+    }
+    #mitchenko{
+        margin-top: -25px;
+    }
+}
+
+@media screen and (max-width: 396px){
+    /* On va faire en sort que dées que la largeur sera en dessous de 1000px *
+    * le logo passera au dessus du formulaire */
+    footer{
+        height: 1000px;
+    }
+
+    #gagoe{
+        height: 440px;
+    }
+
+    #mitchenko{
+        height: 450px;
+    }
+
+}
+
+
+@media screen and (max-width: 364px){
+    /* On va faire en sort que dées que la largeur sera en dessous de 1000px *
+    * le logo passera au dessus du formulaire */
+    footer{
+        height: 1000px;
+    }
+
+    #gagoe{
+        height: 440px;
+    }
+
+    #mitchenko{
+        height: 460px;
+    }
+
+}
+
+@media screen and (max-width: 350px){
+    /* On va faire en sort que dées que la largeur sera en dessous de 1000px *
+    * le logo passera au dessus du formulaire */
+    footer{
+        height: 990px;
+    }
+
+    #gagoe{
+        height: 450px;
+    }
+
+    #mitchenko{
+        height: 480px;
+    }
+
+}
+
+
 
 
 
