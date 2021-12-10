@@ -30,64 +30,79 @@
     <!-- Liste de Pokemon -->
     <section id="yop">
         <div id="pokemon">
-            <div>
+
+            <div id="1" onclick="infos(this)">
                 <img src="arceus.png" alt="Arceus" />
                 <figcaption>Arceus</figcaption>
             </div>
-            <div>
+
+            <div id="2" onclick="infos(this)">
                 <img src="dialga.png" alt="Dialga" />
                 <figcaption>Dialga</figcaption>
             </div>
-            <div>
+
+            <div id="3" onclick="infos(this)">
                 <img src="etourmi.png" alt="Etourmi" />
                 <figcaption>Etourmi</figcaption>
             </div>
-            <div>
+
+            <div id="4" onclick="infos(this)">
                 <img src="fantominus.png" alt="Fantominus" />
                 <figcaption>Fantominus</figcaption>
             </div>
-            <div>
+
+            <div id="5" onclick="infos(this)">
                 <img src="lixy.jpg" alt="Lixy" />
                 <figcaption>Lixy</figcaption>
             </div>
-            <div>
+
+            <div id="6" onclick="infos(this)">
                 <img src="machoc.png" alt="Machoc" />
                 <figcaption>Machoc</figcaption>
             </div>
-            <div>
-                <img src="mew.jpg" alt="Mew" />
+
+            <div id="7" onclick="infos(this)">
+                <img src="mew.png" alt="Mew" />
                 <figcaption>Mew</figcaption>
             </div>
-            <div>
+
+            <div id="8" onclick="infos(this)">
                 <img src="mewtwo.png" alt="Mewtwo" />
                 <figcaption>Mewtwo</figcaption>
             </div>
-            <div>
+
+            <div id="9" onclick="infos(this)">
                 <img src="onix.png" alt="Onix" />
                 <figcaption>Onix</figcaption>
             </div>
-            <div>
-                <img src="Ouisticram.png" alt="Ouisticram" />
+
+            <div id="10" onclick="infos(this)">
+                <img src="ouisticram.png" alt="Ouisticram" />
                 <figcaption>Ouisticram</figcaption>
             </div>
-            <div>
+
+            <div id="11" onclick="infos(this)">
                 <img src="palkia.png" alt="palkia" />
                 <figcaption>Palkia</figcaption>
             </div>
-            <div>
-                <img src="Pikachu.jpg" alt="Pikachu" />
-                <figcaption>Pikachu</figcaption>
+
+            <div id="12" onclick="infos(this)">
+                <img src="pichu.jpg" alt="pichu" />
+                <figcaption>Pichu</figcaption>
             </div>
-            <div>
-                <img src="riolu.jpg" alt="Riolu" />
+
+            <div id="13" onclick="infos(this)">
+                <img src="riolu.png" alt="Riolu" />
                 <figcaption>Riolu</figcaption>
             </div>
-            <div>
-                <img src="Tiplouf.png" alt="Tiplouf" />
+
+            <div id="14" onclick="infos(this)">
+                <img src="tiplouf.png" alt="Tiplouf" />
                 <figcaption>Tiplouf</figcaption>
             </div>
-            <div>
-                <img src="Tortipouss.png" alt="Tortipouss" />
+
+            <div id="15" onclick="infos(this)">
+                <img src="tortipouss.png" alt="Tortipouss" />
                 <figcaption>Tortipouss</figcaption>
             </div>
         </div>
@@ -142,6 +157,75 @@
             </ul>
         </div>
     </footer>
+
+
+<script>
+function infos(x){
+    var a = x.id
+    //console.log(a)
+    
+    if(a=="1"){
+        var b = window.open("arceusInfo.html", "_self",false)
+    }
+
+    if(a=="2"){
+        var b = window.open("dialgaInfo.html", "_self",false)
+    }
+
+    if(a=="3"){
+        var b = window.open("etourmiInfo.html", "_self",false)
+    }
+
+    if(a=="4"){
+        var b = window.open("fantominusInfo.html", "_self",false)
+    }
+
+    if(a=="5"){
+        var b = window.open("lixyInfo.html", "_self",false)
+    }
+
+    if(a=="6"){
+        var b = window.open("machocInfo.html", "_self",false)
+    }
+
+    if(a=="7"){
+        var b = window.open("mewInfo.html", "_self",false)
+    }
+
+    if(a=="8"){
+        var b = window.open("mewtwoInfo.html", "_self",false)
+    }
+
+    if(a=="9"){
+        var b = window.open("onixInfo.html", "_self",false)
+    }
+
+    if(a=="10"){
+        var b = window.open("ouisticramInfo.html", "_self",false)
+    }
+
+    if(a=="11"){
+        var b = window.open("palkiaInfo.html", "_self",false)
+    }
+
+    if(a=="12"){
+        var b = window.open("pichuInfo.html", "_self",false)
+    }
+
+    if(a=="13"){
+        var b = window.open("rioluInfo.html", "_self",false)
+    }
+
+    if(a=="14"){
+        var b = window.open("tiploufInfo.html", "_self",false)
+    }
+
+    if(a=="15"){
+        var b = window.open("tortipoussInfo.html", "_self",false)
+    }
+
+}
+</script>
 </body>
 
 </html>

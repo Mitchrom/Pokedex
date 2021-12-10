@@ -171,6 +171,28 @@ li{
     display: none;
 }
 
+button{
+    font-size: 25px;
+    background: white;
+    border-radius: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+a:hover{
+    color: white;
+}
+
+button:hover{
+    background: red;
+    color: white;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
 
 @media only screen and (max-width: 700px){
 
@@ -243,84 +265,87 @@ li{
 
 
 <body>
-<header></header>
-
-<div id="main">
-
-    <div id="pokemon">
-
-        <div id="a">
-            <img src="pichu.png" alt="Pichu">
-            <figcaption>Pichu</figcaption>
+    <header></header>
+    
+    <div id="main">
+        
+        <div id="pokemon">
+            
+            <div id="a">
+                <img src="pichu.png" alt="Pichu">
+                <figcaption>Pichu</figcaption>
+            </div>
+            
+            <div id="b" class="hidden">
+                <img src="pikachu.png" alt="Pikachu">
+                <figcaption>Pikachu</figcaption>
+            </div>
+            
+            <div id="c" class="hidden">
+                <img src="raichu.png" alt="Raichu">
+                <figcaption>Raichu</figcaption>
+            </div>
+            
         </div>
-
-        <div id="b" class="hidden">
-            <img src="pikachu.png" alt="Pikachu">
-            <figcaption>Pikachu</figcaption>
-        </div>
-
-        <div id="c" class="hidden">
-            <img src="raichu.png" alt="Raichu">
-            <figcaption>Raichu</figcaption>
-        </div>
-
-    </div>
-
-
-    <div id="infos">
-
-        <div id="titre">
-            <h1>Infos Pokémon</h1>
-        </div>
-
-        <div id="infos2">
-            <ul>   
-                <li>Type: éléctrik
-                <li>Taille: 0.3m
-                <li>Poids: 2kg
+        
+        
+        <div id="infos">
+            
+            <div id="titre">
+                <h1>Infos Pokémon</h1>
+            </div>
+            
+            <div id="infos2">
+                <ul>   
+                    <li>Type: éléctrik
+                        <li>Taille: 0.3m
+                            <li>Poids: 2kg
                 <li>Description: "Il prouve son courage en touchant la queue électrifiée de ses pairs."
             </ul>
                 
             <ul class="hidden">  
                 <li>Type: éléctrik
-                <li>Taille: 0.4m
+                    <li>Taille: 0.4m
                 <li>Poids: 6kg 
-                <li>Description: "Si les poches électriques de ses joues crépitent, c'est qu'il est sur ses gardes."
+                    <li>Description: "Si les poches électriques de ses joues crépitent, c'est qu'il est sur ses gardes."
             </ul>
             
             <ul class="hidden">                
                 <li>Type: éléctrik
-                <li>Taille: 0.8m                
-                <li>Poids: 30kg
-                <li>Description: "Il peut terrasser des ennemis bien plus imposants en libérant une décharge de 100 000 volts."
-            </ul>
-        </div>
-
+                    <li>Taille: 0.8m                
+                        <li>Poids: 30kg
+                            <li>Description: "Il peut terrasser des ennemis bien plus imposants en libérant une décharge de 100 000 volts."
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <h2>Évolutions</h2>
+                <div id="second">
+                    
+                    <div id="x" onclick="evolution(this)">
+                        <img src="pichu.png" alt="Pichu">
+                        <figcaption>Pichu</figcaption>
+                    </div>
+                    
+                    <div id="y" onclick="evolution(this)">    
+                        <img src="pikachu.png" alt="Pikachu">
+                        <figcation>Pikachu</figcaption> 
+                        </div>
+                        
+                        <div id="z" onclick="evolution(this)">    
+                            <img src="raichu.png" alt="Raichu">
+                            <figcaption>Raichu</figcaption>   
+                        </div>
+                        
+                    </div>
+<div id="bouton">
+    <button><a href="index.html">Retour</a></button>
     </div>
-
-</div>
-
-
-
-<h2>Évolutions</h2>
-    <div id="second">
-
-        <div id="x" onclick="evolution(this)">
-            <img src="pichu.png" alt="Pichu">
-            <figcaption>Pichu</figcaption>
-        </div>
-
-        <div id="y" onclick="evolution(this)">    
-            <img src="pikachu.png" alt="Pikachu">
-            <figcation>Pikachu</figcaption> 
-        </div>
-
-        <div id="z" onclick="evolution(this)">    
-            <img src="raichu.png" alt="Raichu">
-            <figcaption>Raichu</figcaption>   
-        </div>
-
-</div>
 <footer></footer>
 
 
