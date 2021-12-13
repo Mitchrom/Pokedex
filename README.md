@@ -1,2 +1,2 @@
 # Pokedex
-Projet de groupe où l'on réalise notre version du pokédex
+version en ligne: mitchrom.github.io
