@@ -6,265 +6,8 @@
         <title>Riolu</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            
-body{
-    background-image: url("pokeball3.png");
-    background-position: center;
-    background: rgba(0, 0, 0, 1);
-    /*background-attachment: fixed;*/
-    /*background-repeat: no-repeat;*/
-    
-}
 
-/*div{
-    outline: 1px dotted white;
-}*/
-
-
-
-
-#main{
-    /*background-color: grey;*/
-    display: flex;
-    /*flex-direction: row;*/
-    /*flex-wrap: nowrap;*/
-    justify-content: space-around;
-    width: 100%;
-}
-
-    #pokemon{
-        /*background-color: magenta;*/
-        width: 30%;
-    }
-
-            #a,#b,#c{
-                /*background-color: tomato;*/
-                width: 100%;
-                /*margin-left: auto;*/
-                /*margin-right: auto;*/
-            }
-
-            #a,#b,#c > img{
-                /*display: block;*/
-                margin: auto;
-                width: 80%;
-            }
-
-    #infos{
-        display: flex;
-        flex-direction: column;
-        /*background-color: lightseagreen;*/
-        width: 65%;
-    }
-
-            #titre{
-                text-align: center;
-                /*background-color: yellow;*/
-                height: 30%;
-            }
-
-            #infos2{
-                /*background-color: springgreen;*/
-                /*position: absolute;*/
-                height: 70%;
-            }
-
-
-
-            
-#second{
-    display: flex;
-    /*flex-direction: row;*/
-    /*flex-wrap: wrap;*/
-    /*background-color: orangered;*/
-    text-align: center;
-    width: 100%
-}
-
-#second > div:hover{
-    background-color: gray;
-}
-
-    #x{
-        /*background-color: peru;*/
-        margin-left: auto;
-        margin-right: auto;
-        width: 33%;
-    }
-
-    #y{
-        /*background-color: peru;*/
-        margin-left: auto;
-        margin-right: auto;
-        width: 33%;        
-    }
-
-    #z{
-        /*background-color: peru;*/
-        margin-left: auto;
-        margin-right: auto;
-        width: 33%;
-    }
-        #x > img{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;            
-        }
-
-        #y > img{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 65%;
-        }
-
-        #z > img{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 70%;
-        }
-
-
-    /*#second > div > img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }*/
-
-
-
-    
-    img{
-        display: block;
-        margin: auto;
-        width: 80%;
-    }
-
-
-
-
-figcaption{
-    text-align: center;
-    text-decoration: underline;
-    font-size: 1.25em;
-    color: seashell;
-}
-
-h1, h2{
-    text-align: center;
-    color: seashell;
-}
-
-ul{
-    color: seashell;
-}
-
-li{
-    font-size: 1.5em;
-    color: seashell;
-}
-
-.hidden{
-    display: none;
-}
-
-.xxx{
-    display: none;
-}
-
-button{
-    font-size: 25px;
-    background: white;
-    border-radius: 12px;
-}
-
-a{
-    text-decoration: none;
-    color: red;
-}
-
-a:hover{
-    color: white;
-}
-
-button:hover{
-    background: red;
-    color: white;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-@media only screen and (max-width: 700px){
-
-    #main{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-        #pokemon{
-            width: 100%;
-        }
-
-            #a,#b,#c{
-                /*background-color: tomato;*/
-                width: 100%;
-                /*margin-left: auto;*/
-                /*margin-right: auto;*/
-            }
-
-            #a,#b,#c > img{
-                /*display: block;*/
-                margin: auto;
-                width: 50%;
-            }
-
-
-        #infos{
-            width: 100%;
-        }
-
-
-    #second{
-        display: flex;
-        flex-wrap: nowrap;
-        width: 91%;
-        margin: auto;
-    }
-
-        #x,#y,#z{
-            width: 100%;
-        }
-
-            #x > img{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 35%;            
-            }
-
-            #y > img{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 45%;
-            }
-
-            #z > img{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 55%;
-            }
-
-}
-
-</style>
+<link rel="stylesheet" href="styleInfo.css">        
 
 </head>
 
@@ -279,17 +22,17 @@ button:hover{
 
         <div id="a">
             <img src="riolu.png" alt="Riolu">
-            <figcaption>Riolu</figcaption>
+            <p>Riolu</p>
         </div>
 
         <div id="b" class="hidden">
             <img src="lucario.png" alt="Lucario">
-            <figcaption>Lucario</figcaption>
+            <p>Lucario</p>
         </div>
 
         <div id="c" class="xxx">
             <img src="User_Avatar_2.png" alt="">
-            <figcaption>xxx</figcaption>
+            <p>xxx</p>
         </div>
 
     </div>
@@ -335,17 +78,17 @@ button:hover{
 
         <div id="x" onclick="evolution(this)">
             <img src="riolu.png" alt="Riolu">
-            <figcaption>Riolu</figcaption>
+            <p>Riolu</p>
         </div>
 
         <div id="y" onclick="evolution(this)">    
             <img src="lucario.png" alt="Lucario">
-            <figcation style="text-decoration: underline; color: white;">Lucario</figcaption> 
+            <p>Lucario</p> 
         </div>
 
         <div id="z" class="xxx" onclick="evolution(this)">    
             <img src="User_Avatar_2.png" alt="Ectoplasma">
-            <figcaption>xxx</figcaption>   
+            <p>xxx</p>   
         </div>
 
 </div>

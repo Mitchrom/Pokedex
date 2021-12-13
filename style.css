@@ -105,7 +105,7 @@ span{
 }
 
 
-/********************************** Boddy **********************************/
+/********************************** Body **********************************/
 
 #pokemon div{
     transition: 0.3s;
@@ -115,7 +115,7 @@ span{
     background: white;
 }
 
-section{
+#section{
     padding-top: 55px;
     background: rgb(250, 247, 224);
 }
@@ -125,11 +125,11 @@ section{
     /* Pour les aaligné */
     flex-direction: row;
 
-    /* Ainsi lorsqu un element sorte du contenaire il faut la repositionner en bas *
+    /* Ainsi lorsqu'un élement sort du contenaire, il faut la repositionner en bas *
     * parfait pour le responssive */
     flex-wrap: wrap;
 
-    /* Pour repartire les blocks de maniere egale */
+    /* Pour répartir les blocs de manière égale */
     justify-content: space-evenly;
     background: rgb(250, 247, 224);
 
@@ -139,10 +139,15 @@ img{
     height: 250px;
 }
 
-figcaption{
+#pokemon > p{
     text-align: center;
     width: 200px;
     position: relative;
+    display: block;
+}
+
+#pokemon > div{
+    text-align: center;
 }
 
 #pokemon div:hover{
@@ -154,18 +159,16 @@ figcaption{
 
 /********************************** Footer **********************************/
 footer{
-    /* Pour avoir des pointiller sur le bord du haut du footer */
+    /* Pour avoir des pointillés sur le bord du haut du footer */
     border-top: 1px dashed black;
     background-size: cover;
-
-
-
+    text-align: justify;
     padding: 0px;
     width: 100%;
-    height: 450px;
+    height: auto;
     background: rgb(116, 112, 112); 
 
-    /* Pour les affichers les uns a coté des autres */
+    /* Pour les afficher les uns a coté des autres */
     display: flex;
 
     /* Pour les aaligné */
@@ -233,26 +236,36 @@ footer{
 #gagoe{
     padding: 15px;
     font-size: 18px;
-    margin-top:25px;
-    width: 450px; 
-    height: 410px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 48%; 
+    height: auto;
     background: url(./teste4.png) no-repeat center;
     background-size: cover;
     color: black;
     border-radius: 10px;
 }
 
+#gagoe > p{
+    display: inline;
+}
+
 
 #mitchenko{
     padding: 15px;
     font-size: 18px;
-    margin-top: 25px;
-    width: 450px; 
-    height: 410px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 48%; 
+    height: auto;
     background: url(./test3.png) no-repeat center;
     background-size: cover;
     color: black;
     border-radius: 10px;
+}
+
+#mitchenko > p{
+    display: inline;
 }
 
 
@@ -289,6 +302,7 @@ footer{
 }
 
 /********************************** Responsive Body **********************************/
+
 @media screen and (max-width: 920px){
     #pokemon div{
         transition: 0.3s;
@@ -307,7 +321,7 @@ footer{
         height: 200px;
     }
 
-    figcaption{
+    p{
         text-align: center;
         width: 175px;
         position: relative;
@@ -322,7 +336,7 @@ footer{
         height: 185px;
     }
 
-    figcaption{
+    p{
         text-align: center;
         width: 150px;
         position: relative;
@@ -336,7 +350,7 @@ footer{
         height: 150px;
     }
 
-    figcaption{
+    p{
         text-align: center;
         width: 140px;
         position: relative;
@@ -351,7 +365,7 @@ footer{
         height: 130px;
     }
 
-    figcaption{
+    p{
         text-align: center;
         width: 120px;
         position: relative;
@@ -366,7 +380,7 @@ footer{
         height: 120px;
     }
 
-    figcaption{
+    p{
         text-align: center;
         width: 100px;
         position: relative;
@@ -381,7 +395,7 @@ footer{
         height: 100px;
     }
 
-    figcaption{
+    p{
         text-align: center;
         width: 90px;
         position: relative;
@@ -390,30 +404,22 @@ footer{
 }
 
 
-
-
-
 /********************************** Responsive Footer **********************************/
-@media screen and (max-width: 900px){
+
+@media screen and (max-width: 906px){
     /* On va faire en sort que dées que la largeur sera en dessous de 1000px *
     * le logo passera au dessus du formulaire */
-    footer{
-        height: 880px;
-    }
     #gagoe{
-        margin-top: 45px;
+        width: 98%;
     }
     #mitchenko{
-        margin-top: -25px;
+        width: 98%;
     }
 }
 
 @media screen and (max-width: 396px){
     /* On va faire en sort que dées que la largeur sera en dessous de 1000px *
     * le logo passera au dessus du formulaire */
-    footer{
-        height: 1000px;
-    }
 
     #gagoe{
         height: 440px;
@@ -431,6 +437,7 @@ footer{
     * le logo passera au dessus du formulaire */
     footer{
         height: 1000px;
+        text-align: justify;
     }
 
     #gagoe{
@@ -448,6 +455,7 @@ footer{
     * le logo passera au dessus du formulaire */
     footer{
         height: 990px;
+        text-align: justify;
     }
 
     #gagoe{
